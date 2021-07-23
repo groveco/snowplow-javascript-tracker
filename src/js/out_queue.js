@@ -196,7 +196,7 @@
 		 * If we're not processing the queue, we'll start.
 		 */
 		function enqueueRequest (request, url) {
-            // url tracing down to url in during tracker init + auto schema resolve
+            // url param traced down to config url in tracker init + automatic schema prefix
 			// we use only TLS so safe to put https://snowplow.tools.grove.co
 			configCollectorUrl = url + path;
 			var configCollectorUrlDup = groveCollectorUrl + path;
